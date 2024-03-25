@@ -1,0 +1,213 @@
+body {
+    width: 500px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+}
+
+.acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  
+.home {
+    height: 90%;
+    width: 80%;
+    font-size: 210%;
+    font-weight: 600;
+    margin:9% auto;
+}
+.social-media-blocker {
+    height: 100%;
+    margin:5% 5%;
+    width: 90%;
+    font-size: 200%;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.task_manager {
+    height: 100%;
+    margin:5% 5%;
+    width: 90%;
+    font-size: 200%;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    padding:25px;
+    width:100%;
+    margin:0 auto;
+    border-radius: 10px;
+}
+.container > .todo-header{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left:5px;
+    justify-content: center;
+}
+.social-media-blocker > .container > .todo-body{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.social-media-blocker > .container > .todo-body > .block-input{
+    border:1px solid rgb(48, 48, 48);
+    box-shadow: rgba(0, 0, 0, .9) 0 4px 4px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 36px;
+    padding :10px;
+}
+.task_manager > .container > .todo-body{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.todo-body svg{
+    cursor:pointer;
+    margin-right: 15px;
+}
+.todo-body input{
+    border:none;
+    outline:none;
+    width:100%;
+    background:transparent;
+    padding:15px 0;
+    font-size: 15px;
+}
+.logo{
+    margin-right: 5%;
+    height:70%;
+    width:10%;
+}
+ul li{
+    list-style: none;
+    font-size:18px;
+    cursor:pointer;
+    padding: 10px;
+}
+li{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background:#edeef0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height:45px;
+}
+.listitem{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background:#edeef0;
+    margin:auto 0;
+}
+.updatelist{
+    background:#edeef0;
+    border:none;
+    outline:none;
+}
+
+.summary {
+    height: 100%;
+    margin:5% 5%;
+    width: 90%;
+    font-size: 200%;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary > .container > form > .summary-input {
+    font-size: medium;
+    width: 100%; 
+    height: 150px; 
+    padding: 10px; 
+    border: 2px solid #3c3e3f;
+    box-shadow: rgba(0, 0, 0, .5) 0 4px 4px;
+    box-sizing: border-box;
+}
+
+.summary-result {
+    font-size: medium;
+    width: 100%; 
+    height:fit-content; 
+    padding: 10px; 
+    margin:10px 0;
+    border: 2px solid #3c3e3f;
+    box-shadow: rgba(0, 0, 0, .5) 0 4px 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+
+.button-16 {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  box-shadow: rgba(0, 0, 0, .9) 0 4px 4px;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.button-16:hover {
+  border-color: #3a3b3b;
+  box-shadow: rgba(0, 0, 0, .9) 0 4px 4px;
+  color: #ffffff;
+  background-color: #3c4043;
+}
+
+.button-16:focus {
+  border-color: #43484f;
+  outline: none;
+}
+
+.block-para{
+    font-size: medium;
+    color: rgb(240, 58, 58);
+}
+.description{
+    font-size: small;
+    font-weight:lighter;
+    text-align: justify;
+    padding:5px 5px;
+}
+.desc-head{
+    margin: 20px 0;
+    font-size:large;
+    display:flex;
+}
+.description:hover{
+    padding:10px 10px;
+    transition: ease-out;
+    font-weight:700;
+}
+.description:hover > .desc-head {
+    color: rgb(168, 25, 168);
+    text-decoration: underline;
+}

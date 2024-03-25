@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMitra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-gray">
+            <div class="ml-3 relative flex h-14 items-center">
+                <a href="#home" class="tab-link text-gray-500  hover:bg-purple-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                      </svg>                      
+                </a>
+                <a href="#task_manager" class="tab-link text-gray-500 hover:bg-purple-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="#summary" class="tab-link text-gray-500 hover:bg-purple-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="m23.707,7.293c-.391-.391-1.023-.391-1.414,0l-2.293,2.293-5.586-5.586,2.293-2.293c.391-.391.391-1.023,0-1.414s-1.023-.391-1.414,0l-2.845,2.845-5.863,2.169c-1.488.551-2.637,1.791-3.073,3.317L.111,20.545c-.278.946-.018,1.967.68,2.664.513.514,1.202.79,1.904.79.251,0,.504-.035.751-.108l11.884-3.377c1.521-.432,2.76-1.574,3.315-3.054l2.215-5.907,2.846-2.846c.391-.391.391-1.023,0-1.414Zm-6.935,9.465c-.333.888-1.076,1.573-1.989,1.833l-11.12,3.16,5.818-5.818c.165.044.339.068.518.068,1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2c0,.179.024.353.068.518l-5.817,5.817,3.184-11.161c.262-.916.951-1.66,1.844-1.991l5.467-2.023,6.091,6.091-2.065,5.506Z"/>
+                    </svg>
+                </a>
+                <a href="#social-media-blocker" class=" tab-link text-gray-500 hover:bg-purple-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="m16.9,24H7.1c-.3,0-.584-.135-.774-.367s-.265-.538-.206-.832c.565-2.782,3.038-4.801,5.88-4.801s5.315,2.019,5.88,4.801c.06.294-.016.6-.206.832s-.474.367-.774.367Zm1.1-16c2.206,0,4-1.794,4-4s-1.794-4-4-4-4,1.794-4,4,1.794,4,4,4Zm5.707,14.293l-7.94-7.94c.153-.428.233-.884.233-1.353,0-1.068-.416-2.073-1.172-2.828-1.085-1.085-2.749-1.391-4.16-.918l-2.148-2.148c.917-.746,1.48-1.879,1.48-3.106,0-2.206-1.794-4-4-4-1.226,0-2.36.563-3.106,1.48L1.707.293C1.316-.098.684-.098.293.293S-.098,1.316.293,1.707l22,22c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023,0-1.414Zm-11.581-6.315c.314.314.055.846-.386.796-.867-.097-1.708-.476-2.373-1.141-.665-.665-1.044-1.506-1.141-2.373-.049-.441.482-.7.796-.386l3.104,3.104Zm-6.126-2.978c0-.854.179-1.666.5-2.401l-1.147-1.147c-.25-.25-.614-.35-.957-.261C2.19,9.76.473,11.57.02,13.801c-.06.294.016.599.206.832s.474.367.774.367h5.342c-.221-.626-.342-1.299-.342-2Zm17.98.801c-.565-2.782-3.08-4.801-5.98-4.801-1,0-.975.702-.803,1,.511.883.803,1.907.803,3,0,.701-.121,1.374-.342,2h5.342c.3,0,.584-.135.774-.367s.265-.538.206-.832Z"/>
+                    </svg>
+                </a>
+                <img class="logo ml-auto" src="logo.png">
+            </div>
+    </nav>
+    <div class="tab home" id="home">
+        <div class="container">
+            <div style="display:inline-flex" class="acme-regular">
+                Welcome to TaskMitra
+                <img class="logo ml-3" src="logo.png">
+            </div>
+            <p class="acme-regular">Your all in one productivity tool</p>
+            <div class="description">
+                <div class="desc-head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                      </svg>Task manager
+                </div>
+                A comprehensive task manager that allows users to organize and prioritize their daily tasks. 
+                A quick and easy way to view all of your upcoming tasks in one place, making it simple to stay on top of your to-do list. 
+                Our task manager and to-do list are designed to help users stay organized, reduce stress, and improve productivity.
+            </div>
+            <div class="description">
+                <div class="desc-head" style="text-align:right;justify-content:flex-end;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="m23.707,7.293c-.391-.391-1.023-.391-1.414,0l-2.293,2.293-5.586-5.586,2.293-2.293c.391-.391.391-1.023,0-1.414s-1.023-.391-1.414,0l-2.845,2.845-5.863,2.169c-1.488.551-2.637,1.791-3.073,3.317L.111,20.545c-.278.946-.018,1.967.68,2.664.513.514,1.202.79,1.904.79.251,0,.504-.035.751-.108l11.884-3.377c1.521-.432,2.76-1.574,3.315-3.054l2.215-5.907,2.846-2.846c.391-.391.391-1.023,0-1.414Zm-6.935,9.465c-.333.888-1.076,1.573-1.989,1.833l-11.12,3.16,5.818-5.818c.165.044.339.068.518.068,1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2c0,.179.024.353.068.518l-5.817,5.817,3.184-11.161c.262-.916.951-1.66,1.844-1.991l5.467-2.023,6.091,6.091-2.065,5.506Z"/>
+                    </svg>Summify
+                </div>
+                Summify helps users to get a summary of large texts. Summify is designed to save users time by providing a condensed version of lengthy articles. By using advanced algorithms, Summify analyzes the content and identifies the most important information, which is then displayed in a concise format.
+            </div>
+            <div class="description">
+                <div class="desc-head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="m16.9,24H7.1c-.3,0-.584-.135-.774-.367s-.265-.538-.206-.832c.565-2.782,3.038-4.801,5.88-4.801s5.315,2.019,5.88,4.801c.06.294-.016.6-.206.832s-.474.367-.774.367Zm1.1-16c2.206,0,4-1.794,4-4s-1.794-4-4-4-4,1.794-4,4,1.794,4,4,4Zm5.707,14.293l-7.94-7.94c.153-.428.233-.884.233-1.353,0-1.068-.416-2.073-1.172-2.828-1.085-1.085-2.749-1.391-4.16-.918l-2.148-2.148c.917-.746,1.48-1.879,1.48-3.106,0-2.206-1.794-4-4-4-1.226,0-2.36.563-3.106,1.48L1.707.293C1.316-.098.684-.098.293.293S-.098,1.316.293,1.707l22,22c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023,0-1.414Zm-11.581-6.315c.314.314.055.846-.386.796-.867-.097-1.708-.476-2.373-1.141-.665-.665-1.044-1.506-1.141-2.373-.049-.441.482-.7.796-.386l3.104,3.104Zm-6.126-2.978c0-.854.179-1.666.5-2.401l-1.147-1.147c-.25-.25-.614-.35-.957-.261C2.19,9.76.473,11.57.02,13.801c-.06.294.016.599.206.832s.474.367.774.367h5.342c-.221-.626-.342-1.299-.342-2Zm17.98.801c-.565-2.782-3.08-4.801-5.98-4.801-1,0-.975.702-.803,1,.511.883.803,1.907.803,3,0,.701-.121,1.374-.342,2h5.342c.3,0,.584-.135.774-.367s.265-.538.206-.832Z"/>
+                    </svg>
+                    SocioBlock
+                </div>
+                SocioBlock can be used to block access to social media websites such as Facebook, Twitter, Instagram, and more.
+                By blocking these distractions, Socioblock helps users to stay focused and productive while working on their tasks.
+            </div>
+        </div>
+    </div>
+    <div class="tab task_manager" id="task_manager" style="display:none;">
+        <div class="container">
+            <div class="todo-header">
+                <h2>Task Manager</h2>
+                <img src="icons8-to-do.gif" style="padding-left:15px;">
+            </div>
+            <div class="todo-body">
+                <input type="text" id="todoText" class="todo-input" placeholder="Add your Task">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="AddUpdateClick">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                  
+            </div>
+            <ul id="list-items" class="list-items"></ul>
+        </div>
+    </div>
+    <div class="tab summary" id="summary" style="display:none;">
+        <h2>Summify</h2>
+        <div class="container input">
+            <form id="summary-form">
+                <textarea class="summary-input" id="summary-input" name="summary-input" placeholder="Enter any text you desire and let me provide you with a concise and informative summary."></textarea>
+                <button type="submit" id="input" class="button-16">Summarize</button>
+            </form>
+        </div>
+        <div class="container output" style="display:none">
+            <div class="summary-result" style="border:1px solid black;font-size: medium;"></div>
+            <button id="output" class="button-16">Copy text</button>
+        </div>
+    </div>
+    <div class="tab social-media-blocker" id="social-media-blocker" style="display:none;">
+        <div class="container">
+            <div class="todo-header">
+                <h2>SocioBlock</h2>
+                <img src="icons8-lock.gif" style="padding-left:15px;">
+            </div>
+            <div class="text1">
+            <p class="acme-regular">Feeling unproductive? Take back control. Taskmitra extension blocks all social media sites for a focus boost!</p>
+            </div>     
+        </div>
+        <div class="topItem">
+    </div>
+    <script src="script.js"></script>
+    <script src="todo.js"></script>
+    <script src="summary.js"></script>
+    <script src="block.js"></script>
+</body>
+</html>

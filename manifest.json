@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "TaskMitra",
+    "version": "1.0.0",
+    "description": "A basic example extension with only required keys",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["block.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "GSlogo-removebg-preview.png"
+    },
+    "icons": {
+      "128": "GSlogo-removebg-preview.png"
+    }
+  }
+  
