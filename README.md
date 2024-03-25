@@ -11,7 +11,7 @@ https://github.com/atharvasingh312/TaskMitra/assets/111992277/8d87e7fd-c711-4be1
 
 <center><bold>Taskmitra extension demo video</bold></center>
 
-##Usage
+## Usage
 
 The extension is yet to be published on chrome store.To run this project on your system follow the following steps:
 
