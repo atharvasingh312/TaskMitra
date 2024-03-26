@@ -17,7 +17,7 @@ The extension is yet to be published on chrome store.To run this project on your
 
 1. Clone the repository to your local machine.
 ```bash
-   git clone  https://github.com/atharvasingh312/Book-Recommender-System.git
+   git clone  https://github.com/atharvasingh312/TaskMitra.git
 ```
 
 2. Go to extension of your browser > Manage extensions
