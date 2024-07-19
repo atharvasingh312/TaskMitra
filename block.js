@@ -41,7 +41,6 @@ if (blacklist.includes(site)) {
     modal.style.padding = '20px';
     modal.style.borderRadius = '10px';
     modal.style.zIndex = '10000';
-    modal.innerHTML = `
     <center>
         <h1 style="font-size:large;">Social media sites are blocked</h1>
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
